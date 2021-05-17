@@ -1,0 +1,29 @@
+package com.qaclick.BaseTest;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.qaclick.PageObject.HomePage;
+
+public class gotoHome{
+	
+	WebDriver driver;
+	public gotoHome(WebDriver driver) {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	/*public gotoHome(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+		this.driver = driver;
+	}*/
+
+	@Test
+	public void qahome() {
+		
+		HomePage hp = new HomePage(driver);
+		String abc = hp.linkHome().getText();
+		System.out.println(abc);
+	}
+
+}

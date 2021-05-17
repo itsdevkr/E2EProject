@@ -1,0 +1,33 @@
+package com.qaclick.PageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class BookStorePage {
+
+WebDriver ldriver;
+	
+	public BookStorePage(WebDriver rdriver){
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+	
+	@FindBy(xpath="//div[contains(text(),'Book')]")
+	@CacheLookup
+	WebElement bstore;
+	public void bstorelink () {
+		bstore.click();
+	}
+	
+	@FindBy(xpath="//span[contains(text(),'Login')]")
+	@CacheLookup
+	WebElement bstoreLogin;
+	public void clikbook() {
+		bstoreLogin.click();
+}
+	
+}
+//span[contains(text(),'Login')]

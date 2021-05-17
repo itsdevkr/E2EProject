@@ -1,0 +1,12 @@
+package Academy.E2Eproject;
+
+import Resources.Base;
+
+public class validateTitle extends Base{
+
+	@BeforeTest
+	public void initialize() {
+		driver = initialiazDriver()
+	}
+	
+}

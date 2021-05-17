@@ -1,0 +1,25 @@
+package Academy.E2Eproject;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import PageObject.LandingPage;
+import Resources.Base;
+
+public class validateTitle extends Base{
+
+	@BeforeTest
+	public void initialize() throws IOException {
+		driver = LaunchBrowser();
+		driver.get(prop.getProperty("url"));
+	}
+	
+	@Test
+	public void basePageNavigation() {
+		LandingPage lp = new LandingPage();
+		
+		
+	}
+}

@@ -1,0 +1,12 @@
+package Academy.E2Eproject;
+
+import PageObject.LandingPage;
+
+public class LoginPage extends LandingPage{
+
+	LandingPage lp = new LandingPage(driver);
+	
+	
+	
+	
+}

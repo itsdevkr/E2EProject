@@ -1,0 +1,23 @@
+package Academy.E2Eproject;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class HomePage extends Base{
+
+	@Test
+	public void navigateHomePgae() throws IOException {
+		driver = LaunchBrowser();
+		driver.get("https://qaclickacademy.com/");
+		driver.findElement(By.xpath("//button[3]")).click();
+		driver.findElement(By.xpath("//a[@id='proceed-link']")).click();
+		String expTitle = "QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy";
+		String actTitle = driver.getTitle();
+		
+		Assert.assertEquals(actTitle, expTitle);
+	}
+	
+}

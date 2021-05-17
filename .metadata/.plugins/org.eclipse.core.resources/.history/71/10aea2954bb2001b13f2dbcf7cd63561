@@ -1,0 +1,12 @@
+package Academy.E2Eproject;
+
+import org.testng.annotations.Test;
+
+public class HomePage extends Base{
+
+	@Test
+	public void navigateHomePgae() {
+		driver = LaunchBrowser();
+	}
+	
+}

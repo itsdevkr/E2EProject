@@ -1,0 +1,9 @@
+package com.practice.test;
+
+public class Actions {
+
+	WebDriver driver;
+	
+	
+	
+}

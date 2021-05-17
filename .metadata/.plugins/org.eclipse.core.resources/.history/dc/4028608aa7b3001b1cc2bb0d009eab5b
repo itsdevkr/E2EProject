@@ -1,0 +1,21 @@
+package Academy.E2Eproject;
+
+import org.testng.annotations.Test;
+
+import PageObject.LandingPage;
+import Resources.Base;
+
+public class LoginPage extends Base{
+
+	@Test
+	public void loginPageNavigation() {
+		LoginPage lp = new LoginPage();
+		lp.
+	}
+	
+	
+	
+	
+	
+	
+}

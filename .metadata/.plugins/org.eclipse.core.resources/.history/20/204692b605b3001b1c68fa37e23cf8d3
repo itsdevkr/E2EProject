@@ -1,0 +1,15 @@
+package com.qaclick.PageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.qaclick.BaseTest.BaseClass;
+
+public class HomePage extends BaseClass{
+
+	public HomePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+		this.driver = driver;
+	}
+	
+}

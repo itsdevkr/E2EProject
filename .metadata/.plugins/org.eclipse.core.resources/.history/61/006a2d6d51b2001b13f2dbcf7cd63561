@@ -1,0 +1,9 @@
+package PageObject;
+
+import Academy.E2Eproject.HomePage;
+
+public class LandingPage extends HomePage{
+
+	
+	
+}

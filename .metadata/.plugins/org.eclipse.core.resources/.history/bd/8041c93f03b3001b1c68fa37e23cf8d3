@@ -1,0 +1,16 @@
+package com.qaclick.BaseTest;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeTest;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BaseClass {
+
+	WebDriver driver;
+	
+	@BeforeTest
+	public void LaunchBrowser() {
+		WebDriverManager.chromedriver().setup();
+	}
+}

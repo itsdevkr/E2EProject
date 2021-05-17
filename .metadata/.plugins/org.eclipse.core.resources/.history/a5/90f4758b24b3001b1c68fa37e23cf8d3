@@ -1,0 +1,17 @@
+package com.qaclick.BaseTest;
+
+import org.testng.annotations.Test;
+
+import com.qaclick.PageObject.BookStorePage;
+import com.qaclick.PageObject.HomePage;
+
+public class Test002 {
+
+	@Test
+	public void BookUser() {
+		
+		BookStorePage bsp = new BookStorePage(driver);
+		bsp.setBookUsername().sendKeys("Hello Book");
+	}
+	
+}

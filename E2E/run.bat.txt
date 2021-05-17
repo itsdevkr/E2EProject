@@ -1,0 +1,2 @@
+C:\Users\ThinkPad\OneDrive\Desktop\DKWORK\E2E
+mvn clean install

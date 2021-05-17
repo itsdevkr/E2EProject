@@ -1,0 +1,29 @@
+package com.qaclick.BaseTest;
+
+import org.testng.annotations.Test;
+
+import com.qaclick.PageObject.HomePage;
+
+public class Test001 extends BaseClass{
+
+	public HomePage hp;
+	@Test
+	public void firstName() {
+		
+		HomePage hp = new HomePage(driver);
+		hp.setFname().sendKeys("Madar");
+			
+		
+	}
+	
+	@Test
+	public void bookStoreWebElement() {
+		if(hp.bstorelink().isDisplayed()) {
+			System.out.println("Element is Displayed");
+		}
+		else {
+			System.out.println("Element is not Displayed");
+		}
+	}
+	
+}

@@ -1,0 +1,18 @@
+package com.qaclick.BaseTest;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.qaclick.PageObject.HomePage;
+
+public class gotoHome{
+	
+	@Test
+	public void qahome() {
+		
+		HomePage hp = new HomePage(driver);
+		String abc = hp.linkHome().getText();
+		System.out.println(abc);
+	}
+
+}

@@ -1,0 +1,22 @@
+package Academy.E2Eproject;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import PageObject.LandingPage;
+import Resources.Base;
+
+public class Login extends Base{
+
+
+	@Test
+	public void loginPageNavigation() {
+		Login lp = new Login(driver);
+
+	}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,12 @@
+package PageObject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import Academy.E2Eproject.HomePage;
+
+public class LandingPage extends HomePage{
+
+	public WebDriver driver;
+	
+	WebElement sigin = driver.findElement(By.partialLinkText("Sign_in"));
+}

@@ -1,0 +1,12 @@
+package com.qaclick.BaseTest;
+
+import org.testng.annotations.Test;
+
+public class ValidateTitle extends BaseClass{
+	
+	@Test
+	public void title() {
+		System.out.println(driver.getTitle());
+	}
+
+}

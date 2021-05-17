@@ -1,0 +1,28 @@
+package Academy.E2Eproject;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Base {
+
+	public WebDriver driver;
+	
+	public void LaunchBrowser() {
+		
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream("/E2Eproject/src/main/java/Academy/E2Eproject/data.properties");
+		
+		prop.load(fis);
+		String browserName = prop.getProperty("browser");
+		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get(url);
+	}
+	
+}

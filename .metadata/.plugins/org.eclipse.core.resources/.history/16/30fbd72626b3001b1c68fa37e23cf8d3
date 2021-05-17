@@ -1,0 +1,20 @@
+package com.qaclick.BaseTest;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.qaclick.PageObject.HomePage;
+
+public class Test001 extends BaseClass{
+
+	@Test
+	public void firstName() {
+		
+		HomePage hp = new HomePage(driver);
+		hp.setFname().sendKeys("Madar");
+		
+		hp.bstorelink().isDisplayed();
+		Assert.assertTrue(true);
+	}
+	
+}
