@@ -25,7 +25,6 @@
     <fullyQualifiedTypeName name="Academy.E2Eproject.HomePage"/>
     <fullyQualifiedTypeName name="io.github.bonigarcia.wdm.WebDriverManager"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
     <fullyQualifiedTypeName name="com.qaclick.BaseTest.BaseClass"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
@@ -49,4 +48,7 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
 </qualifiedTypeNameHistroy>
